@@ -35,7 +35,7 @@ Movie list as Json
 400 if invalid or no parameters provided
 Save Movie Rating
 
-End point = /api/SaveMovieRating
+End point = /api/AddMovieRating
 Saves a movie rating
 If rating already exists for the user, the new rating value will overwrite the old one
 Input Parameters
@@ -45,5 +45,5 @@ movieId (int) - id of the movie the rating is for - default scripts will generat
 Rating (byte) - rating value for the movie
 Returns
 200 if rating saved successfully
-404 if the movie or the user are not found
+404 if the movie or the user is not found
 400 if the rating object is invalid
